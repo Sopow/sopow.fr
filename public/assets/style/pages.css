@@ -1,0 +1,517 @@
+:root {
+    --dark-blue: #171e29;
+    --light-blue: #6690f3;
+    --grey-blue: #30466b;
+    --blue: #486ad9;
+}
+
+.about, .experience, .contact {
+    min-height: 100vh;
+    height: 100%;
+    width: 90%;
+    margin-left: 1%;
+    background-color: var(--dark-blue);
+}
+
+.invisible {
+    display: none;
+}
+
+.switch_page {
+    -webkit-animation: page 1s forwards ease-out;
+            animation: page 1s forwards ease-out;
+}
+
+@-webkit-keyframes page {
+    0% {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(10%);
+                transform: translateX(10%);
+    }
+}
+
+@keyframes page {
+    0% {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(10%);
+                transform: translateX(10%);
+    }
+}
+
+.title-card {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-card > h1 {
+    padding-top: 50px;
+}
+
+.title-card > i {
+    padding-bottom: 30px;
+}
+
+.pfp-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px 0 0 50px;
+}
+
+.pfp-card > img {
+    border-radius: 100%;
+    height: 200px;
+    width: auto;
+}
+
+.card {
+    background-color: #15151a;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.experience-card {
+    padding-bottom: 100px;
+}
+
+.name-card > h1 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+    padding-left: 50px;
+    color: white;
+}
+
+.description-card > p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-top: 30px;
+    color: white;
+    max-width: 600px;
+}
+
+.flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.col {
+    margin: 20px;
+}
+
+.card-skills {
+    background-color: #15151a;
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-skills > i {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #0c1018;
+    border: 1px solid white;
+}
+
+.card-skills > h2 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    color: white;
+}
+
+.card-skills > p {
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    max-width: 400px;
+}
+
+.acquired-card {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 80px 0 40px 0;
+}
+
+.col-1 > i {
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 1rem;
+    background: #0c1018;
+    border: red 1px solid;
+    color: white;
+}
+
+.col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.col-1 > div > span {
+    padding: 0 0 0 15px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.card-skills:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.bottom-100 {
+    padding-bottom: 100px;
+}
+
+.card-experience-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.card-experience-title > div > h1 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 30px;
+
+}
+
+.circle > h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    position: absolute;
+    font-family: system-ui;
+    color: white;
+    margin-left: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+}
+
+.circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.title-graph {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.title-graph > h2 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 30px 0 10px 5px;
+    text-align: start;
+}
+
+.graph-bar-content {
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #0e0f10;
+}
+
+.graph-bar-progression {
+    width: 0%;
+    height: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    border-radius: 20px;
+    background-color: #486ad9 !important;
+    margin-top: -10px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+.graph-bar-progression::after {
+    content: '';
+    margin-top: -5px;
+    padding: 6px;
+    background-color: #15151a;
+    border-radius: 100%;
+    border: 4px solid #486ad9;
+}
+
+.second-cart-title > h1 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 30px 0 10px 5px;
+    text-align: start;
+}
+
+.contact-card > a > h2, .contact-card > h2 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 25px 0 10px 5px;
+    text-align: start;
+}
+
+.contact-card > a > h2, .contact-card > h2 {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-card > a > h2:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.row-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.icon-framework {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animation-graph-full {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes animation-graph-full {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes animation-graph-70 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes animation-graph-70 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes animation-graph-60 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes animation-graph-60 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+    
+@-webkit-keyframes animation-graph-50 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+    
+@keyframes animation-graph-50 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes animation-graph-30 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes animation-graph-30 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+    
+@-webkit-keyframes animation-graph-20 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
+}
+    
+@keyframes animation-graph-20 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    background-color: var(--grey-blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pages {
+    overflow-x: hidden;
+}
+
+#input {
+    background-color: #0052f500;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 40px 0 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 60%;
+    margin-left: 10%;
+    height: 10vh;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+#submit-button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.form-name > input::placeholder, .form-message > textarea::placeholder {
+    color: #b4b4b4;
+}
+
+#submit-button:hover {
+    background-color: var(--light-blue)
+}
+.submit-div {
+    margin: 50px;
+}
+
+.contact-form > h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 50px;
+}

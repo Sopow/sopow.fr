@@ -2,11 +2,16 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Sopow</title>
+
+  <!-- Librarys & Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/pages.css">
+
+  <!-- Icon -->
   <link rel="icon" type="image/png" href="./assets/images/Sicone.png" />
 
+  <!-- Embed preview -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sopow.fr/">
   <meta property="og:title" content="Sopow | Portfolio">
@@ -19,290 +24,360 @@
   <meta name="twitter:description" content="Personal website created by Sopow available on Github">
   <meta name="twitter:image" content="https://i.sopow.fr/sopowfr.png">
   <meta name="theme-color" content="#cc3399">
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title-->
+  <title>Sopow</title>
 </head>
 
 <body>
+  <div class="loader charging">
+    <div id="loader-second">
+      <div id="load">
+        <span class="rond1" id="rond"></span>
+        <span class="rond2" id="rond"></span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navbar-phone">
+      <div class="center"><img src="./assets/images/Sicone.png" alt="icon" class="size"
+          style="margin-right: 10px; filter: invert(1);"></div>
 
-  <div class="content">
+      <div class="rightabsolute">
+        <span></span>
+        <span></span>
+        <span></span>
 
-    <!-- Navbar -->
-    <div class="center">
-      <div class="navbar center" id="navbar">
+      </div>
 
-        <div class="sopow center"><img src="./assets/images/Sicone.png" alt="icon" class="size"
-            style="margin-right: 10px;">Sopow</div>
-
-        <div class="rightabsolute">
-          <input type="checkbox" id="check" onchange="change()" />
-          <span></span>
-          <span></span>
-          <span></span>
-
+    </div>
+    <div class="side-bar">
+      <div class="side-bar_top">
+        <div class="logo">
+          <img src="./assets/images/Sicone.png" alt="icon" class="logo image-logo"
+            style="margin-right: 10px; filter: invert(1);">
         </div>
-
-        <div class="center pcnav rightabsolute">
-
-          <a href="#projects" class="hover navspace" id="visible">Projects</a>
-          <a href="#experience" class="hover navspace">Experience</a>
-          <a href="#tools" class="hover navspace">Tools</a>
-          <a href="#services" class="hover navspace">Services</a>
-
-          <a href="https://www.github.com/Sopow/sopow.fr" target="blank" class="hover navspace">
-            Repository
-          </a>
-
-          <a href="mailto:contact@sopow.fr" class="hover navspace">Contact me</a>
-        </div>
-        <ul id="test" class="test">
-          <a href="#projects" class="hover navspace">
-            <li>Projects</li>
-          </a>
-          <a href="#experience" class="hover navspace">
-            <li>Experience</li>
-          </a>
-          <a href="#tools" class="hover navspace">
-            <li>Tools</li>
-          </a>
-          <a href="#services" class="hover navspace">
-            <li>Services</li>
-          </a>
-          <a href="https://www.github.com/Sopow/sopow.fr" target="blank" class="hover navspace">
-            <li>Repository</li>
-          </a>
-          <a href="mailto:contact@sopow.fr" class="hover navspace">
-            <li>Contact me</li>
-          </a>
+      </div>
+      <div class="side-bar_icons">
+        <ul>
+          <li>
+            <a href="#home" id="home"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#about" id="about"><i class="fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#experience" id="experience"><i class="fas fa-briefcase"></i></a>
+          </li>
+          <li>
+            <a href="#contact" id="contact"><i class="fas fa-envelope"></i></a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Me -->
-    <div style="height: 100vh;" class="center">
-      <div class="title raleway">
-
-        <h1 style=" font-size: 90px;" id="title">I'm <a style="color: #cc3399;">Sopow</a></h1>
+    <div class="pages">
+      <!-- About -->
+      <div class="about invisible">
         <div class="center">
-          <div class="typing"
-            style="margin-top: 100px; margin-bottom: 80px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 56px;"
-            id="typer" >
-            Fullstack web developer
+
+          <!-- About me -->
+          <div class="title-card">
+            <h1>About Me</h1>
+            <i class="fa fa-infinity"></i>
           </div>
-        </div>
-
-        <div class="center" style="font-size: 20px; padding-bottom: 200px;">
-          <div style="display: block;">
-            <a href="./assets/images/mycv.pdf" download>
-              <div class="btn">
-                Download CV
-              </div>
-            </a>
-            <div class="btnombre"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Projects -->
-    <div style="height: 100vh; display: block;" class="center">
-      <div class="title" id="projects">
-        <h1>Projects</h1>
-      </div>
-
-      <div class="center" style="padding-top: 50px;">
-
-        <div class="discordcard space">
-
-          <div class="center">
-            <div class="jsp center">
-              <img src="./assets/images/saboyana.png" class="saboyana">
-            </div>
-          </div>
-
-          <div class="center">
-            <h1 class="saboyananame">Saboyana</h1>
-          </div>
-
-          <div class="center">
-            <p class="textdescriptionleft">
-              Saboyana is a utility bot, its main functionality is a userinfo command displaying a lot of information
-              about the user like date of disconnection and others, very useful in different cases !
-            </p>
-          </div>
-
-          <div class="center" style="margin-top: 100px;">
-            <img src="./assets/images/link.png" style="height: 20px; width: auto;">
-            <a class="linknamesaboyana" href="https://www.discord.gg/Fzvawq9NcP">discord.gg/Fzvawq9NcP</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="center">
-
-        <div class="discordcard space">
-
-          <div class="center">
-            <div class="jsp center">
-              <img src="./assets/images/sevensouls.png" class="sevensouls">
-            </div>
-          </div>
-
-          <div class="center">
-            <h1 class="sevensoulsname">Panel Seven Souls</h1>
-          </div>
-
-          <div class="center">
-            <p class="textdescriptionright">
-              Seven Souls is an anti-raid,
-              blacklist, multi-function
-              bot with RPG and other controls.
-              This is equipped with a panel to configure
-              the bot for all features, it could be useful to you.
-            </p>
-          </div>
-
-          <div class="center" style="margin-top: 100px;">
-            <img src="./assets/images/link.png" style="height: 20px; width: auto;">
-            <a class="linknamesevensouls" href="https://www.sopow.fr/">Soon...</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Experience -->
-    <div style="height: 100vh; display: block;" class="center">
-      <div class="title" id="experience" style="padding-top: 0; margin-top: 380px;">
-        <h1>Experience</h1>
-      </div>
-      <div class="center">
-        <div class="discordcardexperience space">
-          <div class="experience">
-            <h1 class="experiencetitle center">Seven Souls</h1>
+          <div class="card">
             <div class="flex">
-              <img src="./assets/images/sevensouls.png"
-                style="height: 70px;width: 70px;border-radius: 100%;margin-left: 20px;margin-right: 30px;margin-top: 10px;">
-              <h2 class="experience" style="margin-left: 10px;">Time : 1 month</h2>
+              <div class="pfp-card" id="card-ratio">
+                <img src="./assets/images/anos-voldigoad.jpeg" alt="pfp">
+              </div>
+              <div class="block" id="block-ratio">
+                <div class="name-card">
+                  <h1>Sopow</h1>
+                </div>
+                <div class="description-card">
+                  <p>
+                    I'm a student who enjoys many activities. Music, sports, video-games, watching animes like The
+                    Misfist of Demon Academy,
+                    Shingeki No Kyojin or Demon Slayer.
+                  </p>
+                  <p>
+                    For the professional side, I'm also web developer. Currently working on a project called WebFuture,
+                    a development team.
+                    I love contributing to open source projects. I like to learn about new technologies and I like to
+                    share my knowledge.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h2 class="experience" style="margin-left: 130px;">Rate : Good</h2>
+            <div class="acquired-card row">
+
+              <div class="col-1">
+                <i class="fa fa-medal"></i>
+                <div>
+                  <span class="white">Almost 1 Year</span>
+                  <br />
+                  <span class="red">Experience</span>
+                </div>
+              </div>
+
+              <div class="col-1">
+                <i class="fa fa-project-diagram"></i>
+                <div>
+                  <span class="white">+3 Projects</span>
+                  <br />
+                  <span class="red">Deployed</span>
+                </div>
+              </div>
+
+              <div class="col-1">
+                <i class="fa fa-code"></i>
+                <div>
+                  <span class="white">Over +5</span>
+                  <br />
+                  <span class="red">Langages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+
+          <div class="title-card">
+            <h1>Skills</h1>
+            <i class="fa fa-infinity"></i>
+          </div>
+          <div class="row bottom-100">
+            <div class="col card-skills center" id="height-ratio">
+              <i class="fa fa-desktop border"></i>
+              <h2>Web Development</h2>
+              <p>Can create a logo, make the design of a website, and code a website</p>
+            </div>
+            <div class="col card-skills center" id="height-ratio">
+              <i class="fa fa-window-maximize border"></i>
+              <h2>Software Development</h2>
+              <p>Can make a desktop application with the Electron framework</p>
+            </div>
+            <div class="col card-skills center" id="height-ratio">
+              <i class="fa fa-microchip border"></i>
+              <h2>Discord Bots</h2>
+              <p>Can make multi-servers Discord bots using a database</p>
+            </div>
+            <div class="col card-skills center" id="height-ratio">
+              <i class="fa fa-book border"></i>
+              <h2>Project Leader</h2>
+              <p>Need help for leading a project? I can help you to make the project better</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="experience invisible">
+        <div class="center">
+          <div class="title-card">
+            <h1>Experience</h1>
+            <i class="fa fa-infinity"></i>
+          </div>
+          <div class="card experience-card">
+            <div class="card-experience-title">
+              <div class="first-card-title">
+
+                <h1>Programming Languages</h1>
+
+                <!-- Javascript -->
+                <div class="card-graphic flex-column">
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>JavaScript</h2>
+                      <h2>11 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-full 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- HTML -->
+                <div class="card-graphic flex-column">
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>HTML & CSS</h2>
+                      <h2>7 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-70 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pug -->
+                <div class="card-graphic flex-column">
+
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>Pug</h2>
+                      <h2>6 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-60 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Typescript -->
+                <div class="card-graphic flex-column">
+
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>Typescript</h2>
+                      <h2>5 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-50 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Ruby -->
+                <div class="card-graphic flex-column">
+
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>Ruby</h2>
+                      <h2>3 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-30 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotlin -->
+                <div class="card-graphic flex-column">
+
+                  <div class="graph">
+                    <div class="title-graph flex">
+                      <h2>Kotlin</h2>
+                      <h2>2 month</h2>
+                    </div>
+                    <div class="graph-bar">
+                      <div class="graph-bar-content"></div>
+                      <div class="graph-bar-progression"
+                        style="animation: animation-graph-20 1s forwards ease-in-out; animation-delay: 700ms;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="second-card-title">
+                <h1>Frameworks</h1>
+                <div class="second-card-graphic flex-column">
+                  <div class="circle">
+                    <canvas id="circle-first" width="auto" height="200"></canvas>
+                    <img src="./assets/images/react.png" alt="react" class="icon-framework react-icon"
+                      onclick="window.location.href='https:/\/www.reactjs.org'">
+                    <h1 class="react-text">React</h1>
+                  </div>
+                  <div class="circle">
+                    <canvas id="circle-second" width="auto" height="200"></canvas>
+                    <img src="./assets/images/express.png" alt="express" class="icon-framework express-icon"
+                      style="height: 40px;" onclick="window.location.href='https:/\/www.expressjs.com'">
+                    <h1 class="express-text">Express</h1>
+                  </div>
+                  <div class="circle">
+                    <canvas id="circle-third" width="auto" height="200"></canvas>
+                    <img src="./assets/images/electron.png" alt="electron" class="icon-framework electron-icon"
+                      onclick="window.location.href='https:/\/www.electronjs.org'">
+                    <h1 class="electron-text">Electron</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact invisible">
+        <div class="center">
+          <div class="title-card">
+            <h1>Contact</h1>
+            <i class="fa fa-infinity"></i>
+          </div>
+          <div class="card" id="form-flex" style="display: flex; margin-bottom: 0;">
+            <div class="contact-form" id="radius">
+              <h2>Write me</h2>
+              <iframe id="heyo" style="display: none;"></iframe>
+              <form
+                action="https://discord.com/api/webhooks/940580534025871401/EKQeGLzOdG3eppjkWntSiGiGqeL2xXEMPawKIqO3-HeKK1RVbAbgFnjX0PIKBZ6MeKtk"
+                method="POST" id="form-data">
+                <div class="form-name flex-column">
+                  <input type="text" autocomplete="off" name="name" id="input" placeholder="Name...">
+                </div>
+                <div class="form-name flex-column">
+                  <input type="text" autocomplete="off" name="email" id="input" placeholder="Email...">
+                </div>
+                <div class="form-name flex-column">
+                  <input type="text" autocomplete="off" name="subject" id="input" placeholder="Subject...">
+                </div>
+                <div class="form-message flex-column">
+                  <textarea name="message" id="input" placeholder="Message..."></textarea>
+                </div>
+                <div class="center submit-div">
+                  <span class="form-success">Your message has been sent</span>
+                  <button type="submit" id="submit-button">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div class="row row-around" style="align-items: center;">
+              <div class="col center contact-card">
+                <i class="fab fa-discord"></i>
+                <h2>Sopow#7130</h2>
+              </div>
+              <div class="col center contact-card">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/Sopow">
+                  <h2>My Github</h2>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Tools -->
-    <div style="height: 100vh; display: block;" class="center">
-      <div class="title" id="tools">
-        <h1>Tools</h1>
+    <div class="content">
+
+      <div class="title">
+        <h1>Sopow</h1>
       </div>
-      <div class="center" style="padding-top: 50px;">
-
-        <div class="tools center">
-          <a href="https://www.apple.com/" target="blank"><img src="./assets/images/apple.png" alt="apple"
-              style="width: 80px;"></a>
-        </div>
-
-        <div class="tools center">
-          <a href="https://code.visualstudio.com/" target="blank"><img src="./assets/images/visualstudiocode.png"
-              alt="vsc" style="width: 80px;"></a>
-        </div>
-
-        <div class="tools center">
-          <a href="https://www.mongodb.com/" target="blank"><img src="./assets/images/mongodb.png" alt="mongodb"
-              style="width: 80px;"></a>
-        </div>
-
+      <div class="switch">
+        <span style="margin-left: -88px">I am a</span>
+        <span>
+          <b class="hidden">Developer</b>
+          <b class="hidden">Designer</b>
+          <b class="hidden">Student</b>
+        </span>
       </div>
-      <div class="center" style="padding-top: 50px;">
-        <div class="tools center">
-          <a href="https://www.github.com/" target="blank"><img src="./assets/images/github.png" alt="github"
-              style="width: 80px;"></a>
-        </div>
-
-        <div class="tools center">
-          <a href="https://www.electronjs.org/" target="blank"><img src="./assets/images/electron.png" alt="electron"
-              style="width: 80px;"></a>
-        </div>
-
-        <div class="tools center">
-          <a href="https://nodejs.dev/" target="blank"><img src="./assets/images/nodejs.png" alt="nodejs"
-              style="width: 80px;"></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services -->
-    <div>
-      <div class="title" id="services">
-        <h1>Services</h1>
-      </div>
-
-      <div class="center" style="margin-top: 50px;">
-        <div class="services-card">
-          <div class="title-card">Website</div>
-          <div class="text-card">I can make responsive websites with backend</div>
-          <div class="image-services-card right">
-            <img src="./assets/images/computer.png" alt="computer" class="size">
-          </div>
-        </div>
-
-        <div class="services-card" style="margin-top: 50px;">
-          <div class="title-card">Discord bot</div>
-          <div class="text-card">I can make multi servers Discord's bots using a DataBase</div>
-          <div class="image-services-card right">
-            <img src="./assets/images/bot.png" alt="bot" class="size">
-          </div>
-        </div>
-      </div>
-
-      <div class="center">
-        <div class="services-card" style="margin-top: 50px;">
-          <div class="title-card">Desktop Application</div>
-          <div class="text-card">I can make Desktop Application with framework Electron.js</div>
-          <div class="image-services-card right">
-            <img src="./assets/images/application.png" alt="application" class="size">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Separation main & footer-->
-    <div class="center" style="padding-top: 50px;">
-      <hr />
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="center" style="justify-content: space-around;">
-
-        <div class="copyright">
-          © 2021, Sopow
-        </div>
-
-        <a href="https://www.github.com/Sopow" target="blank">
-          <svg class="githublogo" aria-hidden="true" height="30" viewBox="0 0 16 16" version="1.1" width="30"
-            data-view-component="true">
-            <path fill-rule="evenodd" color="#484f58"
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-            </path>
-          </svg>
-        </a>
-
-        <div class="contact" style="margin-right: 50px;">
-          <a class="contactmailto" href="mailto:contact@sopow.fr">Contact</a>
-        </div>
-      </div>
-
     </div>
   </div>
-
-  <!-- Scripts -->
-  <script src="./assets/js/change.js"></script>
-  <script src="./assets/js/image.js"></script>
-  <script src="./assets/js/border.js"></script>
-
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

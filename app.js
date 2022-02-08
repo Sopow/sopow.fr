@@ -1,16 +1,13 @@
-var createError = require('http-errors');
-var express = require('express');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var path = require('path')
+const createError = require('http-errors');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const path = require('path')
 require('dotenv').config({path: 'config/.env'})
 
-var indexRouter = require('./routes/index');
-var githubRouter = require('./routes/github')
-var githubrepositoryRouter = require('./routes/githubrepository')
-var mailRouter = require('./routes/mail')
+const indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,18 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/github', githubRouter)
-app.use('/githubrepository', githubrepositoryRouter)
-app.use('/mail', mailRouter)
-
-setTimeout(() => {
-console.log(`[WEB] Website is ready on port, http://localhost:${process.env.PORT}`) 
-}, 2000)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
+app.use('/', indexRouter);
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -45,5 +36,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen(process.env.PORT)
+console.log(`[WEB] Website is ready on port, http://localhost:${process.env.PORT}`)
 
 module.exports = app;
