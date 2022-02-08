@@ -12,7 +12,7 @@ Sopow.fr
 <br />
 
 # Preview : 
-<p align="center"><img src="https://i.sopow.fr/sopowpreview.png"></p>
+<p align="center"><img src="https://i.sopow.fr/sopowfr.png"></p>
 
 # Tools :
 
