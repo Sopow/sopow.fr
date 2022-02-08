@@ -59,7 +59,7 @@ For add page like createyourwebsite.com/page :<br/>
 add in app.js :
 
 ```JS
-var pageRouter = require('./routes/page');
+const pageRouter = require('./routes/page');
 app.use('/page', pageRouter)
 ```
 
@@ -69,8 +69,8 @@ app.use('/page', pageRouter)
 **for redirect to link :**
 
 ```JS
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 
 router.get('/', function(req, res, next) {
@@ -81,8 +81,8 @@ router.get('/', function(req, res, next) {
 **for display a page :**
 
 ```JS
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const path = require('path');
 
 router.get('/', function(req, res, next) {
